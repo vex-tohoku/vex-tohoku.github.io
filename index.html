@@ -2,177 +2,90 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>東北大学技術経営研究会 VEX</title>
+    <title>東北大学VEX</title>
     <link rel="stylesheet" href="./src/normalize.css">
-    <style>
-      @import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
-      @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
-
-      *{
-        box-sizing: border-box;
-      }
-      body{
-        width: 100%;
-        font-family: 'Noto Sans Japanese', sans-serif;
-        color: #333333;
-      }
-
-
-
-      header, section, footer{
-        padding: 40px;
-        width: 100%;
-      }
-
-      header{
-        height: 600px;
-        background-color: #f7f7f7;
-        color: #fff;
-        font-size: 2em;
-      }
-
-
-
-      #main{
-
-      }
-
-      footer{
-        height: 140px;
-        background-color: #55636f;
-        font-weight: lighter;
-
-        color: #ffffff;
-      }
-      .link-twitter{
-        margin-left: 14px;
-        color: #fff;
-        display: inline-block;
-        width: 48px;
-        height: 48px;
-        text-align: center;
-        border: solid 1px #fff;
-        border-radius: 50%;
-        transition: background-color .1s linear, color .1s linear, transform .1s linear; 
-
-
-      }
-      .link-twitter:hover{
-        background-color: #ffffff;
-        color: #1DA1F2;
-        transform: scale(1.15);
-      }
-      .link-twitter i{
-        font-size: 28px;
-        line-height: 46px;
-        vertical-align: middle;
-      }
-
-
-      .link-mail i{
-        font-size: 22px;
-        line-height: 46px;
-        transform: translateY(-1px);
-      }
-      .link-mail:hover{
-
-
-        color: #f75f4b;
-      }
-
-      h1{
-        color: orange;
-        text-align: center;
-
-      }
-
-      h2{
-        text-align: center;
-        font-weight: 200;
-        font-size: 30pt;
-        color: #808386;
-      }
-      section{
-        /*      background-color: green;*/
-        min-height: 500px;
-        /*      background: linear-gradient(to bottom, #ffffff, #ffeaf3);*/
-        border-top: solid 1px #eeeeee;
-      }
-
-      section > div{
-        /*      background-color: #63e863;*/
-        max-width: 960px;
-        margin: 0 auto;
-
-        perspective: 1000px;
-      }
-
-      section img{
-        /*      transform: rotate3d(0,1,0, -30deg);*/
-      }
-
-
-      .hoge1{
-        margin: 0 auto;
-        display: flex;
-        font-size: 0;
-        padding: 0 auto;
-      }
-      .hoge2{
-        width: 600px;
-      }
-      .hoge2 img{
-        width: 100%;
-      }
-      .hoge3{
-        width: 200px;
-      }
-      .hoge3 img{
-        width: 100%;
-      }
-      .hoge1 img{
-        border: solid 1px #ffffff;
-      }
-
-
-    </style>
+    <link rel="stylesheet" href="./src/style.css">
+    <meta name="viewport" content="width=device-width" >
+    <script src="./src/jquery-3.2.1.min.js"></script>
   </head>
   <body>
     <header>
-      VEXVEXVEXVEXVEXVEXVEXVEXV
-      <h1>本気で起業したい東北大生へ</h1>
+      <img class="header-logo" src="./src/vex-logo-01.png" alt="" width="200" height="auto">
+      <div>
+        <h1>本気で<wbr>起業したい<wbr>東北大生へ</h1>
+      <p>東北大VEXは、あなたの夢を実現するための場を提供します。</p>
+      </div>
+
     </header>
     <div id="main">
-      東北大学技術経営研究会 (VEX) <br>
-      Venture Explorer
-
-
-
+     
       <section>
         <h2>組織概要・目的</h2>
-        <div>この夏、本気で起業したい東北大生のための新プロジェクトが始動します。 我々は、大学発ベンチャーの輩出に向けて一気通貫の起業サポートを行います。 未来の東北のリーダーとなる人材を育成することを目的とし、 年間平均10社の大学発ベンチャー立ち上げを目標としています。 主な募集対象は、「起業したいと考えている方」「起業に関心のある方」です。 詳しい情報は以下、問い合わせ先より提供させていただいております。 お気軽にご連絡ください。<br>
-          さぁ、東北大学の歴史の1ページにあなたの名を刻みましょう。
+        <div class="text">
+          <p>この夏、本気で起業したい東北大生のための新プロジェクトが始動します。</p>
+          <p> <b>「未来の東北のリーダーとなる人材の育成」</b>を目的とし、<wbr><b>「年間平均10社の大学発ベンチャーの立ち上げ」</b>を目標としています。</p>
+          <p>現在、本プロジェクトは構想段階で、産学連携のプロジェクトとなる予定です。<wbr>我々は運営として、大学発ベンチャーの輩出に向けて一気通貫の企業サポートを行います。</p>
+          <p>さぁ、東北大学の歴史の1ページにあなたの名前を刻みましょう。
+          </p>
+        </div>
+      </section>
+      <section class="section-achievement">
+        <h2>東北大学VEX 過去実績</h2>
+        <div class="achievement-container">
+          <div class="achievement-left"></div>
+          <div class="achievement-right">
+            <h3>BookHub</h3>
+            <p>学生のニーズに基づいた、中古本売買仲介フリマアプリBookHubを開発。</p>
+            
+            <div id="award">
+              <img class="laurel-left" src="./src/laurel-wreath_left.svg" alt="">
+              <ul>
+                <li>Sendai for Startups! <wbr>ビジネスグランプリ2017 <wbr>学生起業家賞 受賞</li>
+                <li>キャンパスベンチャーグランプリ<wbr>2016東北 <wbr>特別賞(日刊工業新聞社賞) 受賞</li>
+              </ul>
+              <img class="laurel-right" src="./src/laurel-wreath_right.svg" alt="">
+            </div>
 
 
         </div>
-      </section>
-      <section>
 
-        〇問い合わせ先など E-mail:vex6vex@gmail.com
+
+          
+        </div>
+        
+      </section>
+      <section class="section-requirements">
+        <h2>募集要項</h2>
+        <div class="text">
+          <p>現在、本プロジェクトのメンバーを募集しています。<br>
+            主な募集対象は<b>「起業したい学生」 「企業に関心のある学生」</b>です。</p>
+          <p>本プロジェクトへ参加希望の方は以下のフォームからご登録下さい。</p>
+          <a id="application-form" href="https://docs.google.com/forms/d/e/1FAIpQLScslPRC83AKGj-wyaZG9zyW_AdxaivPtkH64q59JCeb2nlLRQ/viewform">VEX 参加希望フォーム</a>
+        </div>
+      </section>
+      <section class="section-contact">
+        <h2>Contact</h2>
+        <div class="contact-links">
+         <a class="link-twitter" href="https://twitter.com/vex_on" target="_blank">
+          <i class="fa fa-twitter" aria-hidden="true"></i>
+          </a>
+          <a class="link-twitter link-mail" data-address="vex6vex" href="">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+          </a>
+        </div>
       </section>
     </div>
     <footer>
-      東北大学技術経営研究会 VEX&nbsp;&nbsp;
-      Contact
-      <a class="link-twitter" href="https://twitter.com/vex_on" target="_blank">
-        <i class="fa fa-twitter" aria-hidden="true"></i>
-      </a>
-      <a class="link-twitter link-mail" href="mailto:vex6vex@gmail.com">
-        <i class="fa fa-envelope" aria-hidden="true"></i>
-      </a>
-
       <div id="copyright">&copy;&nbsp;2017&nbsp;VEX</div>
     </footer>
+    
+  <script>
+    $(function(){
+      var url = "mailto:" + $('.link-mail').attr("data-address") + "@" + "gmail.com";
+      $('.link-mail').attr("href", url);
+    });
+    
+  </script>
 
   </body>
 </html>
