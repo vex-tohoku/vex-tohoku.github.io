@@ -188,6 +188,7 @@ section > div.text{
   background-color: #ffe161;
   text-align: center;
   padding: 30px;
+  position: relative;
 /*  flex:0 0 auto;*/
 }
 
@@ -206,7 +207,11 @@ section > div.text{
   line-height: 1.4em;
 }
 
-
+.achievement{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
 
 #award{
   padding-left: 42px;
@@ -307,6 +312,10 @@ section > div.text{
   }
   
   
+  .achievement{
+    position: static;
+    transform: none;
+  }
 
   
   
