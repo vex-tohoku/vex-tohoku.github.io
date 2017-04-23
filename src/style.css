@@ -291,14 +291,19 @@ section > div.text{
   header{
     min-height: 480px;
   }
+  header .header-logo{
+    right: 30px;
+    top: 30px;
+    width: 180px;
+  }
   header h1{
     font-size: 36px;  
   }
   header p{
-    font-size: 20px;
+    font-size: 18px;
   }
   h2{
-    font-size: 24px;
+    font-size: 18px;
   }
   
   
