@@ -2,11 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" >
     <title>東北大学VEX</title>
     <link rel="stylesheet" href="./src/normalize.css">
+    <link class="webfonts" href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css">
+    <link class="webfonts" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./src/style.css">
-    <meta name="viewport" content="width=device-width" >
-    <script src="./src/jquery-3.2.1.min.js"></script>
   </head>
   <body>
     <header>
@@ -82,11 +83,24 @@
       <div id="copyright">&copy;&nbsp;2017&nbsp;VEX</div>
     </footer>
     
+    
+  <script src="./src/jquery-3.2.1.min.js"></script>
   <script>
+    
+    $(function(){
+      $('link.webfonts').each(function(){
+        $(this).attr('rel', 'stylesheet');
+      });
+    });
+    
+    
     $(function(){
       var url = "mailto:" + $('.link-mail').attr("data-address") + "@" + "gmail.com";
       $('.link-mail').attr("href", url);
     });
+    
+    
+    
     
   </script>
 
