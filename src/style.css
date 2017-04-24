@@ -79,9 +79,11 @@ footer{
 /*  background-color: #55636f;*/
   background-color: #102c58;
   font-weight: lighter;
+  font-family: sans-serif;
   color: #6b84b2;
   padding-top: 20px;
   padding-bottom: 20px;
+  
 }
 .link-twitter{
   color: #fff;
