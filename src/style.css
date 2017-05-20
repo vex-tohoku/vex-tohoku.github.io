@@ -388,6 +388,10 @@ section > div.text{
     margin-right: -20px;
   }
   
+  section.section-achievement{
+    padding-top: 0px;
+  }
+  
   
 }
 
